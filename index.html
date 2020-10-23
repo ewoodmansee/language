@@ -21,46 +21,59 @@
         <div class=box>
           <p>Do you like chocolate?
             <br></br>
-            <label><input type="radio" name="q1" value="yes" checked> yes</label>
-            <label><input type="radio" name="q1" value="no" checked> no</label>
+            <select id="q1">
+              <option value="yes">yes</option>
+              <option value="no">no</option>
+            </select>
           </p>
         </div>
 
         <div class=box>
           <p>Do you dance in the rain?
             <br></br>
-            <label><input type="radio" name="q2" value="yes" checked> yes</label>
-            <label><input type="radio" name="q2" value="no" checked> no</label>
+            <select id="q2">
+              <option value="yes">yes</option>
+              <option value="no">no</option>
+            </select>
           </p>
         </div>
 
         <div class=box>
           <p>Have you ever wanted to leave?
             <br></br>
-            <label><input type="radio" name="q3" value="yes" checked> yes</label>
-            <label><input type="radio" name="q3" value="no" checked> no</label>
+            <select id="q3">
+              <option value="yes">yes</option>
+              <option value="no">no</option>
+            </select>
           </p>
         </div>
 
         <div class=box>
           <p>Are you hungry?
             <br></br>
-            <label><input type="radio" name="q4" value="yes" checked> yes</label>
-            <label><input type="radio" name="q4" value="no" checked> no</label>
+            <select id="q4">
+              <option value="yes">yes</option>
+              <option value="no">no</option>
+            </select>
           </p>
         </div>
 
         <div class=box>
           <p>Do you know what time it is?
             <br></br>
-            <label><input type="radio" name="q5" value="yes" checked> yes</label>
-            <label><input type="radio" name="q5" value="no" checked> no</label>
+            <select id="q5">
+              <option value="yes">yes</option>
+              <option value="no">no</option>
+            </select>
           </p>
         </div>
-        <button type="submit" class="btn">Go!</button>
+        <div class=box>
+          <input type="button" id="button" value="What language?" onclick="languageFunction();">
+        </box>
       </form>
-        <div id="results"></div>
+      <p><div id="result">
 
+      </div></p>
 
 
   </div>
