@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <link href="./css/bootstrap.css" rel="stylesheet" type="text/css">
+  <link href="./css/styles.css" rel="stylesheet" type="text/css">
+  <title>Is this a bird?</title>
+</head>
+<body>
+<div class="container">
+
+<center><img src="images/birdmeme.png" width=500></center>
+
+<form name="quiz" id="quiz">
+
+  <div class="box">
+  <div class="questionstep">
+    <h2>Does it have a beak?</h2>
+      <ul class="bulletless">
+        <li><input type="radio" name="q1" id="mc" value="yes"><label> Yes</label></li>
+        <li><input type="radio" name="q1" id="mc" value="no"><label> No</label></li>
+      </ul>
+  </div>
+  </div>
+  <div class="box">
+  <div class="questionstep">
+    <h2>Does it sound like a bird?</h2>
+      <ul class="bulletless">
+        <li><input type="radio" name="q2" id="mc" value="yes"><label> Yes</label></li>
+        <li><input type="radio" name="q2" id="mc" value="no"><label> No</label></li>
+      </ul>
+  </div>
+  </div>
+  <div class="box">
+  <div class="questionstep">
+    <h2>Does it have feathers?</h2>
+      <ul class="bulletless">
+        <li><input type="radio" name="q3" id="mc" value="yes"><label> Yes</label></li>
+        <li><input type="radio" name="q3" id="mc" value="no"><label> No</label></li>
+      </ul>
+  </div>
+  </div>
+  
+  <input type="button" id="button" value="Bird Check?" onclick="birdFunction();">
+
+  </form>
+  </div>
+</div>
+
+<h2><p id="ageResults"></p></h2>
+
+<script>
+
+function birdFunction(){
+
+let q1 = document.quiz.q1.value;
+let q2 = document.quiz.q2.value;
+let q3 = document.quiz.q3.value;
+  let correct = 0;
+
+
+if (q1 == "yes") {
+  correct++;
+}
+if (q2 == "yes") {
+  correct++;
+}
+if (q3 == "yes") {
+  correct++;
+}
+
+if (correct == 0) {
+	score = 0; }
+    
+if (correct > 0 && correct < 3) {
+	score = 2; }
+    
+if (correct == 3) {
+	score = 3; }
+
+  
+if (score == "3") {
+  results = "It is probably a bird."
+}
+
+if (score == "0") {
+  results = "It is probably not a bird."
+}
+
+if (score == "2") {
+  results = "It may or may not be a bird."
+}
+
+  document.getElementById("ageResults").innerHTML = results;
+
+}</script>
+  
+</body>
+</html>

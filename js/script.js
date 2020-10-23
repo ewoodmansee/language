@@ -1,17 +1,26 @@
-$(document).ready(function() {
-	$("form#quiz").submit1(function() {
-	  event.preventDefault();
-	  let question1Input = $("input#q1").val();
+function q1Function() {
+	let q1 = document.quiz.q1.value;
 
-	if (question1Input = "yes") {
-		alert("WHY")
-	  } 
-	if (question1Input = "no") {
-		alert("HELP")
+	if (q1 === "yes") {
+		alert ("yes")
 	}
+}
 
 
-	}}
+
+
+/* $(document).ready(function() {
+	$("form#questionOne").submit(function() {
+	  event.preventDefault();
+	  const questionOne= $("input:radio[name=q1]:checked").val();
+	  if (q1 === "yes") {
+		$("#questionTwo").show();
+	  } else if (q1 === "no") {
+		$("#questionThree").show();
+	  }
+	});
+  });
+
 
 /*	if (q2 = "yes") {
 		$('#q5').show();
