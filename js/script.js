@@ -5,7 +5,9 @@ function languageFunction() {
 	let q4 = document.quiz.q4.value;
 	let q5 = document.quiz.q5.value;
 	let quizAttribute = document.getElementById('quiz');
-	let resultsAttribute = document.getElementById('languageResults');
+	let rubyAttribute = document.getElementById('rubyResults');
+	let csharpAttribute = document.getElementById('csharpResults');
+	let javascriptAttribute = document.getElementById('javascriptResults');
 	let retakeAttribute = document.getElementById('retakeResults');
 
 		let count = 0;
@@ -27,27 +29,29 @@ function languageFunction() {
 		}
 
 		if (count == "0") {
-			results = "Javascript."
+			rubyAttribute.setAttribute('class', 'languageBox');
+			quizAttribute.setAttribute('class', 'hidden');
 		}
 		else if (count == "5") {
-			results = "C#."
+			csharpAttribute.setAttribute('class', 'languageBox');
+			quizAttribute.setAttribute('class', 'hidden');
 		}
 		else {
-			results = "Ruby."
+			javascriptAttribute.setAttribute('class', 'languageBox');
+			quizAttribute.setAttribute('class', 'hidden');
 		}
 
-		document.getElementById("languageResults").innerHTML = results;
-		resultsAttribute.setAttribute('class', 'languageBox');
-		quizAttribute.setAttribute('class', 'hidden');
-		retakeAttribute.setAttribute('class', 'languageBox');
+
 }
 
 function retakeFunction() {
 	let quizAttribute = document.getElementById('quiz');
-	let resultsAttribute = document.getElementById('languageResults');
-	let retakeAttribute = document.getElementById('retakeResults');
+	let rubyAttribute = document.getElementById('rubyResults');
+	let csharpAttribute = document.getElementById('csharpResults');
+	let javascriptAttribute = document.getElementById('javascriptResults');
 
-	resultsAttribute.setAttribute('class', 'hidden');
-	quizAttribute.setAttribute('class', 'language');
-	retakeAttribute.setAttribute('class', 'hidden');
+	rubyAttribute.setAttribute('class', 'hidden');
+	csharpAttribute.setAttribute('class', 'hidden');
+	javascriptAttribute.setAttribute('class', 'hidden');
+	quizAttribute.setAttribute('class', 'visible');
 }
