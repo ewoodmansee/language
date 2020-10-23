@@ -1,0 +1,64 @@
+body {
+	background-color: black;
+}
+
+h1 {
+	color: #E39648;
+	text-align: center;
+	font-family: courier, times, seraf;
+}
+
+h2 {
+	color: #E3CD48;
+	text-align: center;
+	font-family: courier, times, seraf;
+}
+
+.box h2 {
+	color: #051249;
+	text-align: center;
+	font-family: courier, times, seraf;
+}
+
+p {
+	color: #223890;
+	font-family: courier, times, seraf;
+	font-size: 18px;
+}
+
+.leftfloat {
+	float: left;
+}
+
+.sidebarright {
+	width: 20%;
+	height: 100%;
+	float: right;
+	top: 0;
+}
+
+
+.box {
+	margin: 12px;
+	border: 2px solid #FFF19A;
+	padding: 3px;
+	background-color: #f9fffc;
+}
+
+ul {
+	list-style-type: none;
+	color: #D4BA1C;
+	font-family: courier, times, seraf;
+	font-size: 16px;
+}
+
+a {
+	color: #0433F1;
+}
+
+.bulletless {
+	list-style-type: none;
+	font-family: courier, times, seraf;
+	font-size: 16px;
+	padding: 2px;
+}
