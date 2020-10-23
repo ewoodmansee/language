@@ -63,22 +63,21 @@ a {
 	padding: 2px;
 }
 
-#questionOne {
-	display: show;
-  }
-
-#questionTwo {
+.hidden {
 	display: none;
-  }
+}
 
-#questionThree {
-	display: none;
-  }
+.visible {
+	display: block;
+}
 
-#questionFour {
-	display: none;
-  }
 
-#questionFive {
-	display: none;
-  }
+.languageBox {
+	margin: 12px;
+	border: 2px solid #FFFAD9;
+	padding: 3px;
+	background-color: #FFFEF6;
+	color: #051249;
+	text-align: center;
+	font-family: courier, times, seraf;
+}

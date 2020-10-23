@@ -15,73 +15,81 @@
   <center>
     <h2>What language are you?</h2>
   </center>
-
-      <div class=box>
-        <p>[FLAVOR TEXT FOR QUIZ]</p>
-      </div>
-
-        <form id="quiz" name="quiz">
-
-          <div id="questionOne" name="questionOne">
-            <div class=box>
-              <p>Do you like chocolate?
-                <br></br>
-                  <input type="radio" name="q1" id="mc" value="yes"><label> Yes</label>
-                  <input type="radio" name="q1" id="mc" value="no"><label> No</label>
-                <br></br>
-              <input type="button" id="button" value="What language?" onclick="q1Function();"></p>
-            </div>
-          </div>
-
-
-          <div id="questionTwo" name="questionTwo">
-            <div class=box>
-              <p>Do you like to sleep?</p>
-                <br></br>
-                  <input type="radio" name="q2" id="mc" value="yes"><label> Yes</label>
-                  <input type="radio" name="q2" id="mc" value="no"><label> No</label>
-                <br></br>
-              <input type="button" id="button" value="What language?" onclick="q2Function();">
-            </div>
-          </div>
-
-
-          <div id="questionThree" name="questionThree">
-            <div class=box>
-              <p>Do you want to run away?</p>
-                <br></br>
-                  <input type="radio" name="q3" id="mc" value="yes"><label> Yes</label>
-                  <input type="radio" name="q3" id="mc" value="no"><label> No</label>
-                <br></br>
-              <input type="button" id="button" value="What language?" onclick="q3Function();">
-            </div>
-          </div>
-
-          <div id="questionFour" name="questionFour">
-            <div class=box>
-              <p>Have you ever dreamed of falling?</p>
-                <br></br>
-                  <input type="radio" name="q4" id="mc" value="yes"><label> Yes</label>
-                  <input type="radio" name="q4" id="mc" value="no"><label> No</label>
-                <br></br>
-              <input type="button" id="button" value="What language?" onclick="q4Function();">
-            </div>
-          </div>
-
-          <div id="questionFive" name="questionFive">
-            <div class=box>
-              <p>Do you have a secret you've never told anyone?</p>
-                <br></br>
-                  <input type="radio" name="q5" id="mc" value="yes"><label> Yes</label>
-                  <input type="radio" name="q5" id="mc" value="no"><label> No</label>
-                <br></br>
-              <input type="button" id="button" value="What language?" onclick="q5Function();">
-            </div>
-          </div>
-
-
-
-        </form>
+    <div class=box>
+      <p>Here's a way to find out what programming language is the most you!</p>
     </div>
+
+      <form id="quiz" name="quiz">
+        <div class="quizBox">
+        <div class="box">
+          <h2>Do you like food?</h2>
+          <ul class="bulletless">
+            <li>
+              <input type="radio" name="q1" id="mc" value="yes"><label>Yes</label>
+            </li>
+            <li>
+              <input type="radio" name="q1" id="mc" value="no"><label>No</label>
+            </li>
+          </ul>
+        </div>
+
+        <div class="box">
+          <h2>Do you like sleep?</h2>
+          <ul class="bulletless">
+            <li>
+              <input type="radio" name="q2" id="mc" value="yes"><label>Yes</label>
+            </li>
+            <li>
+              <input type="radio" name="q2" id="mc" value="no"><label>No</label>
+            </li>
+          </ul>
+        </div>
+
+        <div class="box">
+          <h2>Have you ever dreamed of falling?</h2>
+          <ul class="bulletless">
+            <li>
+              <input type="radio" name="q3" id="mc" value="yes"><label>Yes</label>
+            </li>
+            <li>
+              <input type="radio" name="q3" id="mc" value="no"><label>No</label>
+            </li>
+          </ul>
+        </div>
+
+        <div class="box">
+          <h2>Have you ever dreamed of failing?</h2>
+          <ul class="bulletless">
+            <li>
+              <input type="radio" name="q4" id="mc" value="yes"><label>Yes</label>
+            </li>
+            <li>
+              <input type="radio" name="q4" id="mc" value="no"><label>No</label>
+            </li>
+          </ul>
+          </div>
+
+        <div class="box">
+          <h2>Do you have a secret you would never tell anyone?</h2>
+          <ul class="bulletless">
+            <li>
+              <input type="radio" name="q5" id="mc" value="yes"><label>Yes</label>
+            </li>
+            <li>
+              <input type="radio" name="q5" id="mc" value="no"><label>No</label>
+            </li>
+          </ul>
+        </div>       
+          <input type="button" id="button" value="What language?" onclick="languageFunction();">
+        </div>
+      </form>
+
+
+        <div id="languageResults" class="hidden">
+        </div>
+        <div id="retakeResults" class="hidden">
+          <input type="button" id="button" value="Try again?" onclick="retakeFunction();">
+        </div>
+
   </body>
 </html>
