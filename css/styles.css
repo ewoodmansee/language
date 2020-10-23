@@ -53,15 +53,10 @@ ul {
 	font-size: 16px;
 }
 
-a {
-	color: #0433F1;
-}
-
 .bulletless {
 	list-style-type: none;
 	font-family: courier, times, seraf;
 	font-size: 16px;
-	padding: 2px;
 }
 
 .hidden {

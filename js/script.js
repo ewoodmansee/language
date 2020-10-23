@@ -8,7 +8,6 @@ function languageFunction() {
 	let rubyAttribute = document.getElementById('rubyResults');
 	let csharpAttribute = document.getElementById('csharpResults');
 	let javascriptAttribute = document.getElementById('javascriptResults');
-	let retakeAttribute = document.getElementById('retakeResults');
 
 		let count = 0;
 
@@ -41,6 +40,7 @@ function languageFunction() {
 			quizAttribute.setAttribute('class', 'hidden');
 		}
 
+		document.getElementById("ageResults").innerHTML = count;
 
 }
 
