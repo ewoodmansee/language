@@ -50,8 +50,10 @@ function retakeFunction() {
 	let csharpAttribute = document.getElementById('csharpResults');
 	let javascriptAttribute = document.getElementById('javascriptResults');
 
+
+	
 	rubyAttribute.setAttribute('class', 'hidden');
 	csharpAttribute.setAttribute('class', 'hidden');
 	javascriptAttribute.setAttribute('class', 'hidden');
-	quizAttribute.setAttribute('class', 'visible');
+	$("#quiz").show();
 }
