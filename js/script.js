@@ -29,15 +29,15 @@ function languageFunction() {
 
 		if (count == "0") {
 			rubyAttribute.setAttribute('class', 'languageBox');
-			quizAttribute.setAttribute('class', 'hidden');
+			$("#quiz").hide();
 		}
 		else if (count == "5") {
 			csharpAttribute.setAttribute('class', 'languageBox');
-			quizAttribute.setAttribute('class', 'hidden');
+			$("#quiz").hide();
 		}
 		else {
 			javascriptAttribute.setAttribute('class', 'languageBox');
-			quizAttribute.setAttribute('class', 'hidden');
+			$("#quiz").hide();
 		}
 
 		document.getElementById("ageResults").innerHTML = count;
